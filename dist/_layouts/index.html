@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+
+  {% if is_proxymode() %}
+    <link href="/assets/css/main.css" type="text/css" rel="stylesheet" />
+  {% else %}
+    {{ theme_css('main.css', true) }}
+  {% endif %}
+
+</head>
+<body>
+
+{% block content %}{% endblock %}
+
+{% if is_proxymode() %}
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+{% else %}
+  {{ theme_js('main.js', true) }}
+{% endif %}
+
+{{ storyblok_script() }}
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:200,400,600,700' rel='stylesheet' type='text/css'>
+
+</body>
+</html>

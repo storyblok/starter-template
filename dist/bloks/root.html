@@ -1,0 +1,6 @@
+{{blok._editable}}
+<div>
+{% for blok in blok.body %}
+  {% include 'bloks/' ~ blok.component ~ '.html' with {blok: blok} only %}
+{% endfor %}
+</div>

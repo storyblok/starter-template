@@ -1,0 +1,7 @@
+{
+  "name": "storywww",
+  "version": "1.0.0",
+  "devDependencies": {
+    "uikit": "~2.22.0"
+  }
+}

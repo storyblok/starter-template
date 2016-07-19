@@ -1,0 +1,7 @@
+{% extends _layout %}
+
+{% block content %}
+
+{% include 'bloks/root.html' with {blok: story.content} only %}
+
+{% endblock %}

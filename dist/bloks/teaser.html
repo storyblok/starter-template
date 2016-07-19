@@ -1,0 +1,31 @@
+{{ blok._editable }}
+<div class="teaser">
+  <div class="uk-container uk-container-center">
+    <div class="teaser__top uk-clearfix">
+      <div class="uk-float-left">
+        <a href="#documentation">Documentation</a>
+      </div>
+      <div class="uk-float-right">
+        <a href="#login">Login / Signup</a>
+      </div>
+    </div>
+
+    <div class="uk-grid">
+      <div class="uk-width-1-3">
+        <img src="{{ blok.logo }}" />
+      </div>
+      <div class="uk-width-2-3">
+        <ul class="teaser__nav uk-list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how_it_works">How it works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="teaser__hero">
+      <h1>{{ blok.title }}</h1>
+      <h2>{{ blok.subtitle }}</h2>
+    </div>
+  </div>
+</div>

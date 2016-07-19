@@ -1,0 +1,37 @@
+{
+    "project":"boilerplate",
+    "blok": {
+      "apiKey": "",
+      "url": "",
+      "themeId": "",
+      "basePath": "dist"
+    },
+    "src": {
+        "app": "source",
+        "images": "source/images",
+        "fonts": "source/fonts",
+        "icons": "source/icons",
+        "scss": "source/css",
+        "js": "source/js"
+    },
+    "dest": {
+        "public": "dist",
+        "content": "dist/assets/data",
+        "css": "dist/assets/css",
+        "js": "dist/assets/js",
+        "images": "dist/assets/images",
+        "fonts": "dist/assets/fonts",
+        "compress": "dist"
+    },
+    "browsers": [
+        "ie >= 11",
+        "ie_mob >= 11",
+        "ff >= 46",
+        "chrome >= 49",
+        "safari >= 8",
+        "opera >= 23",
+        "ios >= 8",
+        "android >= 4.4",
+        "bb >= 1"
+    ]
+}
