@@ -15,7 +15,7 @@ gulp.task('browsersync', function() {
     port: 3038,
     serveStatic: ['./dist'],
     proxy: {
-      target: 'http://' + config.blok.url,
+      target: 'https://' + config.blok.url,
       reqHeaders: function (config) {
         return {
           'accept-encoding': 'identity',
