@@ -18,8 +18,8 @@ $blue-lightest:         lighten(#D7EBEA, 8);
 $grey-line: #e0e0e0;
 $brand-color-lightest: #D6EBEA;
 
-@import 'bower_components/uikit/scss/uikit-mixins';
-@import 'bower_components/uikit/scss/uikit-variables';
+@import 'node_modules/uikit/dist/scss/uikit-mixins';
+@import 'node_modules/uikit/dist/scss/uikit-variables';
 
 $badge-background: $brand-color;
 $modal-z-index: 2010;
@@ -73,5 +73,5 @@ $form-focus-border:                              $brand-color;
 $form-focus-background:                          $blue-lightest;
 $breadcrumb-divider:                             '\f054';
 
-@import 'bower_components/uikit/scss/uikit';
+@import 'node_modules/uikit/dist/scss/uikit';
 @import 'components/*';
