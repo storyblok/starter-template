@@ -17,6 +17,7 @@ const minify = require('gulp-minify-css');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const notify = require('gulp-notify');
+const plumber = require('gulp-plumber');
 
 gulp.task('build', ['fonts', 'scripts:prod', 'styles:prod', 'images']);
 
@@ -77,7 +78,8 @@ function styles(debug) {
     .pipe(globbing({
         extensions: ['.scss']
     }))
-    .pipe(sass())
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
         cascade: false
